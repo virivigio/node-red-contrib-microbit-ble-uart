@@ -1,0 +1,37 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "sparkline",
+					"settings": {
+						"value": [
+							"datasources[\"count\"][\"payload\"]"
+						]
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "count",
+			"type": "web_socket",
+			"settings": {
+				"ws_uri": "ws://127.0.0.1:1880/red/ws/count"
+			}
+		}
+	],
+	"columns": 3
+}
