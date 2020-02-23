@@ -1,0 +1,24 @@
+{
+    "name": "node-red-contrib-microbit-ble-uart",
+    "version": "0.0.1",
+    "description": "A Node-RED node that uses Noble to interact with Micro:Bit devices",
+    "dependencies": {
+        "noble": ">=1.6.0",
+        "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+    },
+    "resolutions": {
+        "xpc-connection": "sandeepmistry/node-xpc-connection#pull/26/head"
+    },
+    "keywords": [
+        "node-red",
+        "bluetooth",
+        "ble",
+        "uart",
+        "micro:bit"
+    ],
+    "node-red": {
+        "nodes": {
+            "microbit-ble-uart": "microbit-ble-uart.js"
+        }
+    }
+}
